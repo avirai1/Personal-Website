@@ -110,6 +110,29 @@ body {
   padding: 2.1rem 1.9rem 1.8rem;
   box-shadow: var(--shadow);
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.hero-content {
+  flex: 2 1 260px;
+}
+
+.hero-photo {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-photo img {
+  width: 170px;
+  height: 170px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 2px solid rgba(148, 163, 184, 0.6);
+  box-shadow: var(--shadow);
 }
 
 .hero-eyebrow {
@@ -189,7 +212,7 @@ body {
   text-decoration: underline;
 }
 
-/* Sections */
+/* Typography */
 
 h2 {
   margin: 0 0 0.9rem;
@@ -322,6 +345,12 @@ p {
 
   .hero-main {
     padding: 1.7rem 1.35rem 1.6rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-photo {
+    justify-content: flex-start;
   }
 
   .card {

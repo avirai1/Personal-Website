@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About | Atharva Rai</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Learn more about Atharva Rai, a Computer Science student at the University of Michigan interested in software engineering and machine learning."
+  />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Favicon files -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+  <link rel="icon" href="favicon_io/favicon.ico">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="site-title">Atharva Rai</a>
+      <nav class="site-nav">
+        <a href="about.html">About</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#coursework">Coursework</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container card">
+        <h2>About</h2>
+        <p>
+          I am a Computer Science student at the University of Michigan (Class of 2027).
+          Recently, I worked as a Data Science and AI intern at Blue Cross Blue Shield of Michigan where I built
+          a Retrieval Augmented Generation chatbot and supporting data pipelines to help internal teams answer
+          complex questions using internal documentation.
+        </p>
+        <p>
+          I like working where machine learning meets systems: vector search, evaluation pipelines, backend services,
+          and interfaces that make AI features easy for real users to trust.
+        </p>
+        <p>
+          Outside of class, I experiment with games, web apps, and new AI frameworks.
+          I enjoy taking messy problem spaces and designing small, focused tools that make them feel manageable.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Atharva Rai</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
