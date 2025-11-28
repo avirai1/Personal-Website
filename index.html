@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Atharva Rai | Personal Website</title>
+  <title>Atharva Rai</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
@@ -22,11 +22,10 @@
     <div class="container header-inner">
       <a href="index.html" class="site-title">Atharva Rai</a>
       <nav class="site-nav">
-        <a href="about.html">About</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#coursework">Coursework</a>
-        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
       </nav>
     </div>
   </header>
@@ -39,7 +38,7 @@
         <div class="hero-main">
           <div class="hero-content">
             <p class="hero-eyebrow">Computer Science • University of Michigan</p>
-            <h1>Hi, I am Atharva.</h1>
+            <h1>Hi, I'm Atharva.</h1>
             <p class="hero-text">
               I build practical AI tools, backend systems, and game-like interfaces that make products more useful and more fun.
             </p>
@@ -54,7 +53,7 @@
             </p>
           </div>
           <div class="hero-photo">
-            <img src="images/profile.png" alt="Photo of Atharva Rai" />
+            <img src="images/profile.jpg" alt="Photo of Atharva Rai" />
           </div>
         </div>
       </div>
@@ -67,26 +66,38 @@
 
         <div class="experience-item">
           <div class="experience-main">
-            <h3>Data Science / AI Intern</h3>
-            <p class="experience-org">Blue Cross Blue Shield of Michigan · Summer 2024</p>
+            <h3>Software Engineer Intern</h3>
+            <p class="experience-org">Blue Cross Blue Shield of Michigan · Summer 2025</p>
           </div>
           <ul>
-            <li>Built a Retrieval Augmented Generation chatbot that uses vector search over internal documents to answer employee questions.</li>
-            <li>Developed data pipelines, chunking and embedding workflows, and evaluation scripts to compare retrieval quality.</li>
-            <li>Implemented an end to end Streamlit interface so non technical stakeholders could test and give feedback quickly.</li>
+            <li>Built a full-stack Retrieval-Augmented Generation chatbot using Streamlit, Flask, Milvus, and Databricks-hosted LLMs, which enabled employees to query thousands of policy documents and reduced their lookup time by 65%.</li>
+            <li>Engineered a multi-stage retrieval pipeline that split thousands of policy documents into chunks, generated semantic embeddings for retrieval, ran vector search through Milvus, and applied a hybrid reranking model to refine results; this system transformed raw data into structured, queryable knowledge and improved answer accuracy by 40%.</li>
+            <li>Designed and deployed a hybrid backend architecture where Flask exposed REST APIs, Jupyter executed retrieval logic, and Databricks GPU clusters generated final LLM responses, overcoming vector DB constraints and enabling a production-ready proof of concept with clear pathways for future scaling and enterprise adoption.</li>
           </ul>
         </div>
 
         <div class="experience-item">
           <div class="experience-main">
-            <h3>Teaching and Tutoring</h3>
-            <p class="experience-org">Math and Computer Science</p>
+            <h3>Information Technology Intern</h3>
+            <p class="experience-org">Blue Cross Blue Shield of Michigan · Summer 2024</p>
           </div>
           <ul>
-            <li>Tutored students in Algebra, Calculus, and AP Computer Science with a focus on problem solving habits, not just answers.</li>
-            <li>Helped students break down hard problems into smaller steps and build confidence working through them.</li>
+            <li>Created and solved 50+ user stories using Salesforce CRM to address customer and employee problems, effectively tackling critical challenges in the IT department and contributing to improvement in overall work efficiency. </li>
+            <li>Automated recurring Excel reports using lookup functions (VLOOKUP, INDEX/MATCH) to consolidate user story/support data, improving accuracy and ensuring managers had up-to-date data for decision-making.</li>
           </ul>
         </div>
+
+        <div class="experience-item">
+          <div class="experience-main">
+            <h3>AI Research Fellowship</h3>
+            <p class="experience-org">Handshake · Current</p>
+          </div>
+          <ul>
+            <li>Collaborating to train multimodal AI systems by performing text, image, and audio evaluation tasks. Refining model accuracy, reasoning, and fairness through prompt design, entity tagging, and output ranking.</li>
+            <li>Contributing to the next generation of LLM and visual recognition models by analyzing and labeling complex data, such as Instagram entity tagging, to enhance AI capabilities in image search and contextual understanding.</li>
+          </ul>
+        </div>
+
       </div>
     </section>
 
@@ -95,60 +106,159 @@
       <div class="container card">
         <h2>Projects</h2>
 
-        <!-- Games Website -->
+        <!-- RAG Chatbot -->
         <div class="project">
-          <h3>Games Hub Website</h3>
+          <h3>Retrieval-Augmented Generation (RAG) Chatbot</h3>
           <p class="project-desc">
-            A web hub of mini games like Wordle-style puzzles and question reveal battles.
+            May 2025 – Aug 2025
           </p>
           <ul class="project-list">
-            <li>React, TypeScript, Vite, and Tailwind CSS.</li>
-            <li>Reusable components, state management, and responsive layout.</li>
+            <li>
+              Designed a multi-stage retrieval pipeline that converted thousands of unstructured policy files into structured,
+              searchable knowledge.
+            </li>
+            <li>
+              Implemented document chunking, semantic embeddings, and a reranking model to surface the most contextually
+              relevant passages, giving employees reliable access to critical compliance information.
+            </li>
+          </ul>
+          <!-- Optional: add GitHub or internal link if you ever can -->
+          <!-- <p class="project-links"><a href="#" target="_blank" rel="noopener noreferrer">GitHub</a></p> -->
+        </div>
+
+        <!-- Advanced Operating Systems Projects -->
+        <div class="project">
+          <h3>Advanced Operating Systems Projects</h3>
+          <p class="project-desc">
+            Jan 2025 – Apr 2025
+          </p>
+          <ul class="project-list">
+            <li>
+              Built advanced OS components in C++, including a multi-CPU thread library, a copy-on-write virtual memory
+              pager, and a concurrent file server.
+            </li>
+            <li>
+              Designed scalable locking and concurrency mechanisms to support high-throughput, high-concurrency workloads.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Real-Time Chat Application -->
+        <div class="project">
+          <h3>Real-Time Chat Application</h3>
+          <p class="project-desc">
+            Jan 2025 – Apr 2025
+          </p>
+          <ul class="project-list">
+            <li>
+              Built a full-stack real-time chat app using React for a dynamic UI and Firebase for database and storage.
+            </li>
+            <li>
+              Implemented user authentication, image sharing, and real-time messaging with a responsive, clean design.
+            </li>
+          </ul>
+          <!-- Optional GitHub link -->
+          <!-- <p class="project-links"><a href="#" target="_blank" rel="noopener noreferrer">GitHub</a></p> -->
+        </div>
+
+        <!-- Games Website -->
+        <div class="project">
+          <h3>Games Website</h3>
+          <p class="project-desc">
+            July 2025 – Present
+          </p>
+          <ul class="project-list">
+            <li>
+              Leveraging AI to build a full-stack web platform for games, designing both the site architecture and the underlying
+              game logic for interactive puzzle and strategy games.
+            </li>
+            <li>
+              Using Git for version control, actively expanding the library with new titles, optimizing for replayability, and
+              refining the interface to create an engaging user experience.
+            </li>
           </ul>
           <p class="project-links">
             <a href="https://github.com/avirai1/games-website" target="_blank" rel="noopener noreferrer">GitHub</a>
           </p>
         </div>
 
-        <!-- Future projects -->
-        <div class="project">
-          <h3>RAG Chatbot (Coming Soon)</h3>
-          <p class="project-desc">
-            Retrieval-Augmented Generation chatbot built at Blue Cross Blue Shield of Michigan.
-          </p>
-          <ul class="project-list">
-            <li>Python, LangChain, Chroma/Milvus, Streamlit.</li>
-          </ul>
-        </div>
-
-        <div class="project">
-          <h3>PDF HCC Annotation Tool (Coming Soon)</h3>
-          <p class="project-desc">
-            Streamlit-based PDF annotation and HCC extraction tool.
-          </p>
-        </div>
-
       </div>
     </section>
 
-    <!-- Coursework -->
-    <section id="coursework" class="section">
-      <div class="container card">
-        <h2>Selected coursework</h2>
-        <div class="course-grid">
-          <ul>
-            <li><strong>EECS 281</strong> Data Structures and Algorithms</li>
-            <li><strong>EECS 370</strong> Computer Organization</li>
-            <li><strong>EECS 376</strong> Foundations of Computer Science</li>
-          </ul>
-          <ul>
-            <li><strong>EECS 445</strong> Machine Learning</li>
-            <li><strong>EECS 482</strong> Operating Systems</li>
-            <li><strong>MATH 425</strong> Introduction to Probability</li>
-          </ul>
-        </div>
+  <!-- Coursework -->
+  <section id="coursework" class="section">
+    <div class="container card">
+      <h2>Coursework</h2>
+      <div class="course-grid">
+
+        <ul>
+          <li>
+            <strong>EECS 280 – Programming & Data Structures</strong><br />
+            Introduction to C++ programming, testing, and essential data structures such as linked lists, trees, and hash maps.
+          </li>
+
+          <li>
+            <strong>EECS 203 – Discrete Mathematics</strong><br />
+            Logic, proofs, combinatorics, recurrence relations, and discrete structures foundational to CS theory.
+          </li>
+
+          <li>
+            <strong>EECS 281 – Data Structures & Algorithms</strong><br />
+            Algorithm design and analysis, including graphs, priority queues, sorting, dynamic programming, and greedy algorithms.
+          </li>
+
+          <li>
+            <strong>EECS 370 – Computer Organization</strong><br />
+            Hardware–software interface, assembly programming, pipelines, memory hierarchy, and processor architecture.
+          </li>
+
+          <li>
+            <strong>EECS 376 – Theory of Computation</strong><br />
+            Automata theory, computability, P vs. NP, and complexity models studying what problems can be computed efficiently.
+          </li>
+
+          <li>
+            <strong>EECS 481 – Software Engineering</strong><br />
+            Software design, large-scale development, testing strategies, refactoring, team workflows, and engineering tools.
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <strong>EECS 482 – Operating Systems</strong><br />
+            Concurrency, scheduling, virtual memory, kernels, processes, and OS-level synchronization primitives.
+          </li>
+
+          <li>
+            <strong>EECS 445 – Machine Learning</strong><br />
+            Regression, classification, neural networks, regularization, and ML methodology with emphasis on mathematical foundations.
+          </li>
+
+          <li>
+            <strong>EECS 201 – Computer Science Pragmatics</strong><br />
+            Practical programming tools including Git, Unix, debugging, Make, build systems, containers, and software tooling.
+          </li>
+
+          <li>
+            <strong>EECS 498 – Advanced Operating Systems Projects</strong><br />
+            High-level systems projects such as thread libraries, virtual memory, file systems, and kernel-level concurrency.
+          </li>
+
+          <li>
+            <strong>MATH 214 – Applied Linear Algebra</strong><br />
+            Matrices, vector spaces, eigenvalues, orthogonality, numerical methods, and applications in ML and engineering.
+          </li>
+
+          <li>
+            <strong>STATS 250 – Statistics & Data Analysis</strong><br />
+            Probability, inference, regression, confidence intervals, and foundational statistical modeling for data science.
+          </li>
+        </ul>
+
       </div>
-    </section>
+    </div>
+  </section>
+
 
   </main>
 
