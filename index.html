@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Atharva Rai | Personal Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Atharva Rai – CS @ University of Michigan. I build ML-powered tools and playful web experiences."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#home" class="logo">Atharva Rai</a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#coursework">Coursework</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="home" class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Hi, I am Atharva</p>
+        <h1>CS @ University of Michigan</h1>
+        <p class="hero-subtitle">
+          I like building AI-powered tools, data-heavy backends, and little games that get people to interact.
+        </p>
+        <div class="hero-actions">
+          <a href="mailto:YOUR_EMAIL@umich.edu" class="btn-primary">Email me</a>
+          <a href="#projects" class="btn-ghost">View projects</a>
+        </div>
+        <div class="hero-meta">
+          <span>Actively seeking SWE / ML internships</span>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="images/headshot.jpg" alt="Portrait of Atharva Rai" />
+      </div>
+    </div>
+  </main>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="section-inner">
+      <h2>About Me</h2>
+      <p>
+        I am a Computer Science student at the University of Michigan (Class of 2027).
+        Recently, I worked as a Data Science / AI intern at Blue Cross Blue Shield of Michigan,
+        where I built a Retrieval-Augmented Generation (RAG) chatbot and supporting data pipelines.
+      </p>
+      <p>
+        I enjoy working at the intersection of machine learning, backend systems, and developer tools:
+        anything that takes messy data and turns it into something people can actually use.
+        On the side, I build games, small web apps, and experiments with new AI frameworks.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section section-alt">
+    <div class="section-inner">
+      <h2>Projects</h2>
+      <p class="section-subtitle">
+        A few things I have built recently. More details on my GitHub.
+      </p>
+
+      <div class="projects-grid">
+        <!-- PROJECT 1 -->
+        <article class="project-card">
+          <h3>Healthcare RAG Chatbot</h3>
+          <p class="project-tagline">
+            A Retrieval-Augmented Generation assistant that answers questions about healthcare benefits
+            using internal documentation and vector search.
+          </p>
+          <ul class="project-details">
+            <li>Built with Python, LangChain, Milvus/Chroma, and Streamlit.</li>
+            <li>Improved retrieval relevance and reduced manual lookup time for internal users.</li>
+          </ul>
+          <div class="project-links">
+            <!-- TODO: replace # with your actual repo link -->
+            <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </article>
+
+        <!-- PROJECT 2 -->
+        <article class="project-card">
+          <h3>Snake Game (Extended Rules)</h3>
+          <p class="project-tagline">
+            A fully featured Snake-style game with custom rules, power-ups, and polished collision handling.
+          </p>
+          <ul class="project-details">
+            <li>Implemented in Python using object-oriented design.</li>
+            <li>Supports multiple difficulty modes and custom board setups.</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </article>
+
+        <!-- PROJECT 3 -->
+        <article class="project-card">
+          <h3>Games Hub Website</h3>
+          <p class="project-tagline">
+            A web hub of mini-games (Wordle-style, reveal battle, etc.) built to explore frontend architecture and UX.
+          </p>
+          <ul class="project-details">
+            <li>Built with React, TypeScript, Vite, and Tailwind.</li>
+            <li>Includes persistent scores, responsive layout, and reusable components.</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener noreferrer">Live site</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </article>
+
+        <!-- PROJECT 4 -->
+        <article class="project-card">
+          <h3>PDF HCC Annotation Tool</h3>
+          <p class="project-tagline">
+            A Streamlit app to upload PDFs, highlight clinical text, and extract HCC-relevant snippets with LLM help.
+          </p>
+          <ul class="project-details">
+            <li>Integrates PDF parsing, chunking, embedding search, and chat-style explanations.</li>
+            <li>Designed for rapid iteration with clinicians and analysts.</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <div class="section-inner">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <h3>Data Science / AI Intern · Blue Cross Blue Shield of Michigan</h3>
+          <p class="timeline-meta">Summer 2024 · Detroit, MI</p>
+          <ul>
+            <li>Engineered a RAG chatbot to answer internal questions using proprietary documentation.</li>
+            <li>Built vector search pipelines, evaluation scripts, and a Streamlit interface for non-technical users.</li>
+            <li>Collaborated with data scientists and product stakeholders to refine prompts and metrics.</li>
+          </ul>
+        </article>
+
+        <article class="timeline-item">
+          <h3>Teaching & Tutoring</h3>
+          <p class="timeline-meta">High school and college-level CS / math</p>
+          <ul>
+            <li>Tutored students in Algebra, Calculus, and AP Computer Science.</li>
+            <li>Focused on building intuition and problem-solving strategies, not just getting to the answer.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coursework -->
+  <section id="coursework" class="section section-alt">
+    <div class="section-inner">
+      <h2>Selected Coursework</h2>
+      <div class="course-grid">
+        <div class="course-col">
+          <ul>
+            <li><strong>EECS 281:</strong> Data Structures and Algorithms</li>
+            <li><strong>EECS 370:</strong> Computer Organization</li>
+            <li><strong>EECS 376:</strong> Foundations of Computer Science</li>
+          </ul>
+        </div>
+        <div class="course-col">
+          <ul>
+            <li><strong>EECS 445:</strong> Machine Learning</li>
+            <li><strong>EECS 482:</strong> Operating Systems</li>
+            <li><strong>MATH 425:</strong> Probability</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Links -->
+  <section id="contact" class="section">
+    <div class="section-inner">
+      <h2>Check me out</h2>
+      <p class="section-subtitle">
+        Best way to reach me is by email. You can also find my work and experience here:
+      </p>
+      <div class="link-row">
+        <!-- TODO: update hrefs -->
+        <a href="mailto:YOUR_EMAIL@umich.edu" class="link-chip">Email</a>
+        <a href="https://github.com/YOUR_GITHUB" target="_blank" rel="noopener noreferrer" class="link-chip">GitHub</a>
+        <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener noreferrer" class="link-chip">LinkedIn</a>
+        <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="link-chip">Resume (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Atharva Rai. Built with HTML &amp; CSS.</p>
+  </footer>
+
+  <script>
+    // Set current year automatically
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
