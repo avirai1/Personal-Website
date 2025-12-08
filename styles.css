@@ -326,6 +326,34 @@ p {
   margin-top: 0.3rem;
 }
 
+/* About Section with Image */
+
+.about-content {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1 1 400px;
+}
+
+.about-image {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 280px;
+  height: 280px;
+  border-radius: var(--radius);
+  object-fit: cover;
+  border: 2px solid rgba(148, 163, 184, 0.4);
+  box-shadow: var(--shadow);
+}
+
 /* Contact */
 
 .contact-list {
@@ -363,6 +391,19 @@ p {
 @media (max-width: 720px) {
   .site-nav {
     display: none;
+  }
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-image {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .about-image img {
+    width: 200px;
+    height: 200px;
   }
 
   .hero-main {
