@@ -107,14 +107,14 @@ body {
   background: radial-gradient(circle at top left, #111827, #020617);
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  padding: 3.5rem 2.5rem 3rem;
+  padding: 5rem 2.5rem 3rem;
   box-shadow: var(--shadow);
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 2.5rem;
   align-items: center;
-  min-height: 450px;
+  min-height: 600px;
 }
 
 .hero-content {
@@ -132,11 +132,11 @@ body {
 }
 
 .hero-photo img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border-radius: 999px;
   object-fit: cover;
-  border: 2px solid rgba(148, 163, 184, 0.6);
+  border: 2px linear-gradient(135deg, #38bdf8, #6366f1);
   box-shadow: var(--shadow);
 }
 
@@ -196,7 +196,7 @@ body {
 .btn.primary {
   border: none;
   background: linear-gradient(135deg, #38bdf8, #6366f1);
-  color: #0b1120;
+  color: #ffffff;
   box-shadow: var(--shadow);
 }
 
