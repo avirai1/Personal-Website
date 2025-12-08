@@ -108,7 +108,7 @@ body {
   background: radial-gradient(circle at top left, #111827, #020617);
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  padding: 4rem 3.5rem 4rem;
+  padding: 2.5rem 2rem 2.2rem;
   box-shadow: var(--shadow);
   width: 100%;
   display: flex;
@@ -240,7 +240,7 @@ p {
 .experience-main {
   display: flex;
   flex-direction: column;
-  gap: 0.1rem;
+  gap: 0.05rem;
   margin-bottom: 0.4rem;
 }
 
@@ -258,6 +258,10 @@ p {
 
 .experience-item li + li {
   margin-top: 0.2rem;
+}
+
+.experience-item h3 {
+  margin: 0 0 0.1rem 0;
 }
 
 /* Projects */
@@ -347,7 +351,7 @@ p {
 }
 
 .about-image img {
-  width: 400px;
+  width: 280px;
   height: 450px;
   border-radius: var(--radius);
   object-fit: cover;
