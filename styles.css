@@ -107,7 +107,7 @@ body {
   background: radial-gradient(circle at top left, #111827, #020617);
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  padding: 5rem 2.5rem 3rem;
+  padding: 4rem 3.5rem 4rem;
   box-shadow: var(--shadow);
   width: 100%;
   display: flex;
@@ -136,7 +136,7 @@ body {
   height: 300px;
   border-radius: 999px;
   object-fit: cover;
-  border: 2px linear-gradient(135deg, #38bdf8, #6366f1);
+  border: 2px solid rgba(148, 163, 184, 0.6);
   box-shadow: var(--shadow);
 }
 
